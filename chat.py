@@ -27,4 +27,3 @@ while True:
     print(chr(27)+"[1;33m"+response.choices[0].message.content)
     
     messages.append({'role': 'assistant', 'content': response.choices[0].message.content})
-
