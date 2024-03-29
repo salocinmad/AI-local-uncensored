@@ -30,7 +30,7 @@ def chat_bot():
             max_tokens=-1
         )
 
-        print(chr(27)+"[1;33m"+response.choices[0].message.content)
+        print(chr(27)+"[1;33m"+"Eclipse: "+response.choices[0].message.content)
 
         messages.append({'role': 'assistant', 'content': response.choices[0].message.content})
 
